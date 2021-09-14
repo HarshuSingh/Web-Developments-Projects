@@ -2,298 +2,123 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>task 1</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Banking System</title>
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet"
+    href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+  <!-- Fonts -->
+  <link rel="stylesheet" href="CSS_files/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+  <!-- AOS  -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 
-<body>
+<body style="background-color:rgb(0, 0, 0)" onload="loader()">
 
-    <header class="site-headers">
+  <!-- loader for splash screen -->
+  <div id="loading"></div>
 
-        <nav>
-            <div class="logo">
-                <h1>PHOTOSHOPY</h1>
-            </div>
-            <div class="menu">
-                <ul>
-                    <li>Home </li>
-                    <li>Projects</li>
-                    <li>Pricing</li>
-                    <li>Team</li>
-                    <li>Blog</li>
-                    <li>Contact</li>
+  <!-- navbar starts here  -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="./index.html">Online Transaction Portal</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-                </ul>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto" id="navbar_left">
+        <li class="nav-item active">
+          <a class="nav-link" href="./index.html">Home Page<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./customers.html">View All Customers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.thesparksfoundationsingapore.org/" target="_blank">About TSF</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- navbar ends here  -->
 
-            </div>
-
-        </nav>
-
-        <section>
-
-        </section>
-        <div class="main">
-            <h1>One page promising to<br> fill all your needs!</h1>
-            <p>This is Photoshop's version of lorem Ipsum. Proin<br> gravida nibha vel velit auctor aliquet.</p>
-            <a href="#" class="btnone">LEARN MORE </a>
-            <a href="#" class="btntwo">LEARN MORE </a>
+  <!-- here content starts here -->
+  <div class="container-fluid hero-content">
+    <div class="row align-items-center">
+      <div class="col-md-6 col-sm-12 text-center" data-aos="fade-up" >
+        
+        <h1 id="welcome">Welcome</h1> 
+        <h2>to the Virtual Bank</h2>
+        <p class="lead muted"></p>We Make It Hassle Free</p>
+        <br>
+        <br>
+        <a class="get-started" href="./customers.html">Let's Get Started</a>
+      </div>
+      <div class="col-md-6 col-sm-12 text-center" data-aos="fade-left">
+        <div class="i1-div">
+          <img class="i1" src="https://images.ctfassets.net/x4we65bqi45q/69PIq5GB2a067NpPSsc6La/8b3bf2d78368e31269c6869e60082601/how-to-do-mutual-fund-transactions-using-upi.jpg?w=800&q=50" alt="Bank_Image">
         </div>
-
-    </header>
-    <div class="welcome">
-        <h1>Welcome to PHOTOSHOPY</h1><br> <br>
-        <p>This is Photoshop's version of<br> Lorem Ipsum.Proin gravida nibh<br> vel Velit auctor aliquet.Aenean Sol-<br> licitudin,lorem quis bibendum<br> auctor
-        </p>
-        <img src="umbrella vector.png">
+      </div>
     </div>
-    <div class="notification">
-        <img src="NOTIFICATION.png">
-        <h4>LOREM IPSUM</h4>
-        <P>Lorem Ipsum dolor sit<br>amet,conseceleture adipi-<br>scing elit.Peberbesque yet<br> odio vet bells placerat <br> pharetra of vitae bells</P>
-        <a href="#" class="button">LEARN MORE </a>
+  </div>
+  <!-- here content ends here -->
+
+
+
+
+  <!-- footer starts here -->
+  <footer>
+    <hr>
+    <div class="row text-center">
+      <div class="col-md-6">
+        <p><li><a target="_blank" class="The Sparks Foundation" href="https://www.linkedin.com/company/the-sparks-foundation/mycompany/"> The Sparks Foundation</a> </p>
+
+      </div>
+      <div class="col-md-6 text-center">
+        <ul class="social-icons">
+          Connect :
+          <li><a target="_blank" class="LinkedIn" href="https://www.linkedin.com/in/harshit-singh-92ba49187/"> Harshit Singh <i
+                class="fab fa-linkedin fa-2x"></i></a>
+              <a target="_blank" class="Instagram" href="https://www.instagram.com/the_gr8_harshu/?hl=en"> <i 
+                class="fab fa-instagram fa-2x"></i></a>
+                <a target="_blank" class="GitHub" href="https://github.com/HarshuSingh"> <i 
+                  class="fab fa-github fa-2x"></i></a>
+            </li>
+
+        </ul>
+      </div>
     </div>
-    <div class="message">
-        <img src="message.jpg">
-        <h4>DOLOR SIT</h4>
-        <P>Lorem Ipsum dolor sit<br>amet,conseceleture adipi-<br>scing elit.Peberbesque yet<br> odio vet bells placerat <br> pharetra of vitae bells</P>
-        <a href="#" class="button">LEARN MORE </a>
-    </div>
-    <div class="about">
-        <img src="about2.png">
-        <h4>CONSECTETURE</h4>
-        <P>Lorem Ipsum dolor sit<br>amet,conseceleture adipi-<br>scing elit.Peberbesque yet<br> odio vet tells placerat <br> pharetra of vitae tells</P>
-        <a href="#" class="button">LEARN MORE </a>
-    </div>
+  </footer>
+  <!-- footer ends here -->
 
-    <div class="project">
-        <h1>Project</h1>
-    </div>
-    <div class="img1">
-        <img src="magazine.jpg">
-    </div>
-    <div class="img2">
-        <img src="laptop.jpg">
-    </div>
-    <div class="img3">
-        <img src="logical.jpg">
-    </div>
-      <div class="img4">
-        <img src="business.jpg">
-    </div>
-    <div class="project1">
-        <h3>Project Name</h3>
-        <p>Loeom Opum dolor all amet consecfelur adipi-<br>scing est, peberbesque yet odio yettels plac-<br> erat phanetra of vitae tells</p>
-        <a href="#" class="button">LAUNCH CASE STUDY </a>
-    </div>
-    <div class="project2">
-        <h3>Project Name</h3>
-        <p>Loeom Opum dolor all amet consecfelur adipi-<br>scing est, peberbesque yet odio yettels plac-<br> erat phanetra of vitae tells</p>
-        <a href="#" class="button">LAUNCH CASE STUDY </a>
-    </div>
-    <div class="project3">
-        <h3>Project Name</h3>
-        <p>Loeom Opum dolor all amet consecfelur adipi-<br>scing est, peberbesque yet odio yettels plac-<br> erat phanetra of vitae tells</p>
-        <a href="#" class="button">LAUNCH CASE STUDY </a>
-    </div>
-    <!--<div class="project4">
-        <h3>Project Name</h3>
-        <p>Loeom Opum dolor all amet consecfelur adipi-<br>scing est, peberbesque yet odio yettels plac-<br> erat phanetra of vitae tells</p>
-        <a href="#" class="button">LAUNCH CASE STUDY </a>
-    </div> -->
+  <!-- spalsh screen js -->
+  <script>
+    var preloader = document.getElementById("loading");
+    function loader() {
+      preloader.style.display = 'none';
+    }
+  </script>
 
-    <div class="table">
-        <h1>Pricing Table</h1>
-    </div>
-    <div class="table1">
-        <h3>STANDARD PLAN</h3>
-        <p>Free</p>
-        <h5>2 GB Available<br>15 Max contacts<br>20 Message/month<br>Ads free </h5>
-        <a href="#" class="button">BUY </a>
-    </div>
-    <div class="table2">
-        <h3>BUSINESS PLAN</h3>
-        <p>Free</p>
-        <h5>10 GB Available<br>75 Max contacts<br>120 Message/month<br>Ads free </h5>
-        <a href="#" class="button">BUY </a>
-    </div>
-    <div class="table3">
-        <h3>PREMIUM PLAN</h3>
-        <p>Free</p>
-        <h5>100 GB Available<br>Unlimited contacts<br>Unlimited Message/month<br>Ads free </h5>
-        <a href="#" class="button">BUY </a>
-    </div>
-    <div class="video">
-    </div>
-    <div class="video-project">
-        <h1>Video Projects</h1>
+  <script src="assets/js/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"></script>
+  <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"></script>
 
-    </div>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/J-YER8eVQ9A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/OlRllul9yUA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-    <div class="team">
-
-        <div class="container">
-            <h1>Our Team</h1>
-        </div>
-        <div class="row1">
-            <div class="col-md-3 profile text-centre">
-                <div class="img-box">
-                    <img src="logo2.jpg" class="img-responsive">
-                </div>
-                <h2>KARY PETTE</h2>
-                <p>Creative Head</p>
-
-            </div>
-        </div>
-        <div class="row2">
-            <div class="col-md-3 profile text-centre">
-                <div class="img-box">
-                    <img src="logo3.jpg" class="img-responsive">
-                </div>
-                <h2>JOHN MICHMAGEN</h2>
-                <p>Senior Designer</p>
-
-            </div>
-        </div>
-        <div class="row3">
-            <div class="col-md-3 profile text-centre">
-                <div class="img-box">
-                    <img src="logo4.jpg" class="img-responsive">
-                </div>
-                <h2>ATRON ALFZA</h2>
-                <p>Art Director</p>
-
-            </div>
-        </div>
-        <div class="row4">
-            <div class="col-md-3 profile text-centre">
-                <div class="img-box">
-                    <img src="logo6.jpg" class="img-responsive">
-                    <ul>
-                </div>
-                <h2>CHRIS HANGON</h2>
-                <p>Senior Designer</p>
-
-            </div>
-        </div>
-    </div>
-
-    <div class="zippy">
-        <h1>Life in PHOTOSHOPY</h1>
-        <div class="slider">
-            <div class="gallery">
-                <div class="images">
-                    <input type="radio" name="slide" id="img1" checked>
-                    <input type="radio" name="slide" id="img2">
-                    <input type="radio" name="slide" id="img3">
-                    <input type="radio" name="slide" id="img4">
-
-                    <img src="team1.jpg" class="m1" alt="img1">
-                    <img src="team2.jpg" class="m2" alt="img2">
-                    <img src="team3.jpg" class="m3" alt="img3">
-                    <img src="team4.jpg" class="m4" alt="img4">
-                </div>
-                <div class="dots">
-                    <label for="img1"></label>
-                    <label for="img2"></label>
-                    <label for="img3"></label>
-                    <label for="img4"></label>
-                </div>
-
-            </div>
-        </div>
-        <div class="search">
-            <h1>Newsletter Signup</h1>
-            <br>
-            <div class="searchbar">
-                <form action="#">
-                    <div class="form-box">
-                        <input type="text" name="EmailidAddress" placeholder="abc Example.c">
-                        <button type="submit"> Sign Up</button>
-                    </div>
-
-                </form>
-            </div>
-        </div>
-        <div class="blog">
-            <h1>Blog</h1>
-        </div>
-        <div class="blog1">
-            <img src="team4.jpg" alt="image">
-            <h3>LOREM IPSUM DOLOR<br>SIT AMET</h3>
-            <P>15 jan,2015</P>
-            <h4>Lorem ipsum dolor sit amet,con-<br>sectetur adipiscing elt.pellen<br> sesque yrt odio yet tells placerat<br> pharetra bit vitae tells</h4>
-            <a href="#" class="button">READ MORE </a>
-        </div>
-        <div class="blog2">
-            <img src="team2.jpg" alt="image">
-            <h3>LOREM IPSUM DOLOR<br>SIT AMET</h3>
-            <P>15 jan,2015</P>
-            <h4>Lorem ipsum dolor sit amet,con-<br>sectetur adipiscing elt.pellen<br> sesque yrt odio yet tells placerat<br> pharetra bit vitae tells</h4>
-            <a href="#" class="button">READ MORE </a>
-        </div>
-        <div class="blog3">
-            <img src="logo3.jpg" alt="image">
-            <h3>LOREM IPSUM DOLOR<br>SIT AMET</h3>
-            <P>15 jan,2015</P>
-            <h4>Lorem ipsum dolor sit amet,con-<br>sectetur adipiscing elt.pellen<br> sesque yrt odio yet tells placerat<br> pharetra bit vitae tells</h4>
-            <a href="#" class="button">READ MORE </a>
-        </div>
-
-
-        <!--------contact----->
-        <div class="contact-map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113996.46425250365!2d83.33387003926758!3d26.763851216239452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3991446a0c332489%3A0x1ff3f97fdcc6bfa2!2sGorakhpur%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1626688892321!5m2!1sen!2sin"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            <div class="contact-form">
-                <div class="contact-in">
-                    <h1>Contact Us</h1>
-                    <form>
-                        <input type="text" placeholder="Name" class="contact-form-txt" />
-                        <input type="text" placeholder="Email" class="contact-form-txt" />
-                        <textarea placeholder="Message" class="contact-form-textarea"></textarea>
-                        <input type="submit" placeholder="Submit" class="contact-form-btn" />
-
-                    </form>
-                </div>
-            </div>
-
-        </div>
-
-
-    </div>
-    <div class="last">
-        <h3>OFFICE ADDRESS</h3>
-        <p>Lorem ipsum dolor,234<br>1200 consechare<br>Adpsching</p>
-    </div>
-
-    <div class="follow">
-        <h3>FOLLOW US</h3>
-        <img src="fb.jpeg">
-        <img src="linkdin.jpeg">
-        <img src="twitter.jpeg">
-    </div>
-    <div class="contact">
-        <h3>CONTACT US</h3>
-        <p>+123456789<br>PHOTOSHOPY*skype<br>enquiry*Photoshopy.com</p>
-    </div>
-
-    </div>
-
-
-
-
-
-
-
-
-
+  <!-- aos data  -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 700,
+    });
+  </script>
 
 </body>
 
