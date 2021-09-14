@@ -1,0 +1,786 @@
+.carousel-item {
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .carousel-caption {
+    bottom: 270px;
+  }
+  
+  .carousel-caption h5 {
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+  }
+  
+  .carousel-caption p {
+    width: 75%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+  }
+  
+  .navbar-light .navbar-brand {
+    color: #fff;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  
+  .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+    color: #fff;
+  }
+  
+  .navbar-light .navbar-nav .nav-link {
+    color: #fff;
+  }
+  
+  .navbar-toggler {
+    background: #fff;
+  }
+  
+  .navbar-nav {
+    text-align: center;
+  }
+  
+  .nav-link {
+    padding: .2rem 1rem;
+  }
+  
+  .nav-link.active,.nav-link:focus{
+    color: #fff;
+  }
+  
+  .navbar-toggler {
+    padding: 1px 5px;
+    font-size: 18px;
+    line-height: 0.3;
+  }
+  
+  .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: #fff;
+  }
+  .navbar-brand:hover{
+    background-color: slategray;
+  }
+  .button {
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: rgb(23, 184, 233);
+  }
+
+  .button:hover {
+    background-color: yellow;
+  }
+
+  .fa_custom {
+    color: purple;
+  }
+
+.fa_custom1 {
+    color: black;
+  }
+  .newspaper {
+    column-count: 2;
+    column-gap: normal;
+    text-align: center;
+    /* margin: 50px 50px 100px 100px; */
+
+  }
+
+  .newspaper p {
+    text-align: center;
+  }
+ 
+
+hr{
+  border: 0.2rem solid rgba(145, 144, 144, 0.7);
+  max-width: 85rem;
+  width: 90%;
+  margin: 2.3rem auto;
+}
+.project h1{
+  max-width: 85rem;
+  width: 90%;
+  margin: 0 auto;
+  font-size: 5rem;
+  text-align: center;
+}
+.project .projects{
+  display: flex;
+  flex-direction: row;
+  margin: 2rem 0;
+  background-color: #E1E5EA;
+}
+.project .projects .pro{
+  width: 25%;
+}
+.project .projects .pro img{
+  width: 100%;
+  height: 35rem;
+}
+.project .projects .pro .contents{
+  margin-top: 0rem;
+  position: relative;
+  height: 25rem;
+  
+}
+.project .projects .pro .contents h2{
+  margin-left: 7%;
+  font-size: 2.3rem;
+  margin-bottom: 1rem;
+}
+.project .projects .pro .contents p{
+  margin-left: 7%;
+  font-size: 1.5rem;
+}
+.project .projects .pro .contents a{
+  position: absolute;
+  margin-left: 7%;
+  bottom: 20%;
+  color: black;
+  background-color: white;
+}
+.project .projects .pro .contents:hover{
+  background-color: #FFC947;
+}
+.project .projects .pro .contents a:hover{
+  background-color: #061df0;
+  color: white;
+}
+.price-section
+{
+    /* width: 100vh; */
+   height: 20rem;
+}
+.price
+{
+    display: flex;
+    justify-content: space-around;   
+    width: 70%;
+    margin: auto;
+
+}
+.con{
+  width: 100vw;
+  height: 80vh;
+  margin-top: 10rem;
+}
+.con img{
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+.con .form{
+  float: right;
+  width: 50%; 
+  text-align: center;
+  background-color: yellowgreen;
+  height: 100%;
+}
+.con .form h1{
+  font-size: 3rem;
+}
+.con .form::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.con .form input,.con .form label,.con .form textarea{
+  display: block;
+  margin: 1rem auto;
+  width: 50%;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: start;
+}
+.con .form .btn{
+  text-align: center;
+}
+.add{
+  max-width: 85rem;
+  width: 90%;
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+}
+.add .det h1{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.add .det p{
+  font-size: 1.3rem;
+}
+.add .det .det1{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20%;
+}
+.add .det .det1 i{
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+@media(max-width:500px){
+.con img{
+  display: none;
+}
+.con .form{
+  float: none;
+  width: 80%; 
+  text-align: center;
+  background-color:yellowgreen;
+  height: 80%;
+  margin: 0 auto;
+}
+}
+.plans
+{
+    text-align: center;
+}
+.border
+{
+    border: .1px inset;
+}
+
+.blur
+{
+    opacity: .5;
+    margin: .3rem;
+}
+.price-dis
+{
+    margin-top: .5rem;
+}
+.buy
+{
+    
+    background: transparent;
+    padding: 0.3rem 1.5rem;
+    background: #ffffff;
+    margin-top: .5rem;
+    background: #69268b;
+    margin-top: .5rem;
+    color: white;
+}
+.project .projects{
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+@media(max-width:460px){
+  
+  .project .projects{
+      flex-wrap: wrap;
+      justify-content: space-around;
+  }
+  .project .projects .pro{
+      width: 80%;
+  }
+}
+
+/* .video-project
+{
+    width: 100%;
+    background-color: whitesmoke;
+    /* background-color: blueviolet; */
+    /* height: 60vh; */
+    /* padding: 2rem auto; */
+    /* padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+.video-project h1
+{
+    text-align: center;
+    margin: 2rem auto; */
+    /* color: white; */
+/* } */
+
+/* .videos
+{
+    display: flex;
+    /* height: 100%; */
+    /* margin-bottom: 3rem; */
+    /* width: 80%; */
+    /* border: 2px solid; */
+    /* margin: auto;
+    overflow: scroll;
+    justify-content: center;
+   background-color: purple; 
+}
+.video
+{
+    height: 20rem; 
+    margin: auto 2rem;
+    transition: 1s;
+}
+.video video
+{
+    width: 25rem;
+     height: 20rem; 
+    height: 15rem; */
+/*} */ */
+.rowp{
+  margin-left: 250px;
+  font-size: 1rem;
+}
+.vertical{
+border-left: 3px outset lightgray;
+height: 260px;
+position: absolute;
+left: 580px;
+    }
+.v{
+border-left: 3px outset lightgray;
+height: 260px;
+position: absolute;
+left: 5px;
+}
+#testimonial{
+height: 430px;
+background-color:#66235E
+}
+.colsb{
+padding-top: 20px;
+}
+.card {
+
+margin: 30px 30px;
+transition: .6s ease;
+border: 0;
+background:  #66235E;
+}
+
+.card:hover {
+transform: scale(1.05);
+}
+
+.card-block {
+padding: 10px;
+}
+.scrollcards {
+background-color: #66235E;
+overflow: auto;
+white-space: nowrap;
+width: 1491.990px;
+}
+
+::-webkit-scrollbar {
+width: 0px;
+height: 0px;
+background: transparent;
+}
+video:-webkit-full-page-media
+{
+margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+div.scrollcards .card {
+display: inline-block;
+padding: 14px;
+text-decoration: none;
+height: auto;
+width: 728px;
+background:  #66235E;
+}
+.crow{
+width:1462px;
+}
+.card-text{
+margin-left: 330px;
+font-size: 0.8rem;
+}
+iframe{
+border:0;
+}
+#video{
+margin-top: 30px;
+color:white;
+background-color:  #66235E;
+}
+#video p{
+text-align: end;
+}
+.team-area{
+  display: flex;
+  width: 90%;
+  justify-content: space-around;
+
+}
+.single-team{
+  width: 360px;
+  height: 400px;
+  padding: 24px;
+  background: #fff;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  transition: .6s ease-out;
+  box-sizing: 0 10px 10px rgba(0,0,0,0.5);
+}
+.single-team:hover{
+  transform: translateY(15px);
+}
+.single-team:hover::before{
+  opacity: 1;
+}
+.single-team:hover .team-text{
+  opacity: 1;
+  transform: translateY(0);
+}
+.single-team::before{
+  content: '';
+  position: absoulte;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #000, transparent);
+  z-index: 2;
+  transition: 0,5s;
+  opacity: 0;
+
+
+}
+.house{
+  max-width: 85rem;
+  width: 90%;
+  margin: 0rem auto;
+}
+.house h1{
+  font-size: 4.5rem;
+  text-align: center;
+}
+.house .flt{
+  margin: 2rem 0;
+}
+
+.house.flt .txt{
+  float: left;
+  
+  width: 70%;
+}
+.house .flt .txt p{
+  font-size: 1.5rem;
+  text-align: left;
+}
+.house .flt .simg{
+  float: right;
+  width: 20%;
+  text-align:left
+}
+
+
+.house .flt::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.house .boxz{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5rem;
+}
+.house .boxz .box{
+  text-align: center;
+}
+.house .boxz .box .icn{
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+  background-color: #583D72;
+  margin: 1rem auto;
+  position: relative;
+  cursor: pointer;
+}
+.house .boxz .box .icn i{
+  font-size: 4.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50use;
+  translate:(-50%,-50%);
+  color: whitesmoke;
+}
+.house .boxz .box h3{
+  margin: 1rem 0;
+  font-size: 2reuse;
+  text-transform: uppercase;
+}
+.house .boxz .box p{
+  margin: 2rem 0;
+  font-size: 1.5rem;
+}
+
+.single-team img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+
+
+}
+.single-team .team-text{
+  position: relative;
+  z-index: 3;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(60px);
+  transition: 0.5s;
+}
+
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 8px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+.cont{
+  height: 50vh;
+  width: 100vw;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 800px;
+  -webkit-perspective:800px;
+}
+.btn{
+  background-color: #eaeaea;
+  height: 80px;
+  width: 450px;
+  border:10px solid #eaeaea;
+  box-shadow: inset 0 0 25px rgba(5,5,5,0.15);
+  position: relative;
+}
+.upper{
+  background-color:#359eec;
+  height:80px;
+  width: 450px;
+  box-shadow: inset 0 0 25px rgba(5,5,5,0.15); 
+  transform-style: preserve-3d;
+  -webkit-transform-style:preserve-3d;
+  transform-origin: bottom;
+  position: relative;
+  font-size: 30px;
+  color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn:hover .upper{
+  transform:rotateX(-120deg);
+}
+input[type="email"]{
+  width:270px; 
+  height: 17px;
+  background-color: white;
+  border:1.8px solid #359eec;
+  padding: 5px;
+  padding-left:10px;
+  font-size:20px; 
+  font-family: 'Montserrat', sans-serif;
+}
+.btn{
+  background-color:#359eec;
+  border:none;
+  color:white;
+  font-size: 19px;
+  padding: 4px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-family: 'Montserrat', sans-serif;
+}
+.conet{
+  position: absolute;
+  top:25px;
+  left:25px;
+}
+span{
+  backface-visibility: hidden;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+.container2 {
+  position: relative;
+  background-color: slategray;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container2 {
+  text-align: center;
+  padding: 2px 4px 4px,4px; 
+  color: white;
+}
+
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column1 {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
